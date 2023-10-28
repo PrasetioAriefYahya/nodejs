@@ -7,6 +7,10 @@ const server = http.createServer((req, res) => {
   res.end('Hello World!');
 });
 
+app.get("/notes", async (req, res) => {
+  res.send("HAI")
+})
+
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
 });
