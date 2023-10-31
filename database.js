@@ -11,8 +11,9 @@ const pool = mysql.createPool({
 }).promise()
 
 export async function getNotes() {
-    const [rows] = await pool.query("SELECT * FROM notes")
-    return rows
+    // const [rows] = await pool.query("SELECT * FROM notes")
+    // return rows
+    return 'HAI'
 }
 
 export async function getNote(id) {
