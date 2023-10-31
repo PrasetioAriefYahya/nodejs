@@ -25,7 +25,7 @@ app.post("/notes", async (req, res) => {
 
 app.use((err, req, res, next) => {
   console.error(err.stack)
-  res.status(500).send('Something broke!')
+  res.status(500).send(err.stack)
 })
 
 app.listen(3000, () => {
