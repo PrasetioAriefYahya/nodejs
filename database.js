@@ -4,10 +4,10 @@ import dotenv from 'dotenv'
 dotenv.config()
 
 const pool = mysql.createPool({
-  host: process.env.MYSQL_HOST,
-  user: process.env.MYSQL_USER,
-  password: process.env.MYSQL_PASSWORD,
-  database: process.env.MYSQL_DATABASE
+  host: 'monorail.proxy.rlwy.net',
+  user: 'root',
+  password: 'hg2FF6h33h3AF5fd4gEdFheF4AFgcd4g',
+  database: 'railway'
 }).promise()
 
 export async function getNotes() {
